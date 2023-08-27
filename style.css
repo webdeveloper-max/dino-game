@@ -1,0 +1,68 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.game{
+    width: 600px;
+    height: 200px;
+    border:1px solid black;
+    margin:auto;
+}
+#dino{
+    width:50px;
+    height: 50px;
+    background-color: red;
+    background-image: url("https://w7.pngwing.com/pngs/1003/946/png-transparent-dino-t-rex-runner-tyrannosaurus-dino-chrome-dinosaur-game-angle-white-thumbnail.png");
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+    
+}
+.jump{
+    animation:jump 0.3s linear;
+}
+#cactus{
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top: 110px;
+    left:580px;
+
+    background-image:url("https://chromedino.com/img/emojis/4-original.png");
+background-size: 20px  40px;
+background-repeat: no-repeat;
+animation:block 3s infinite ease-out;
+}
+
+
+
+@keyframes block{
+    0%{
+        left:580px;
+
+    }
+    100%{
+        left:-20px;
+    }
+}
+
+
+
+@keyframes jump{
+    0%{
+        top: 180px;
+
+    }
+    30%{
+        top: 130px;
+    }
+    50%{
+        top: 80px;
+    }
+    100%{
+        top:150px;
+    }
+}
